@@ -25,37 +25,37 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Simple request model - accepts any field names
+# Simple request model with proper type validation
 class PredictionRequest(BaseModel):
-    """Simple model for prediction requests."""
+    """Model for prediction requests with proper field validation."""
     
-    class Config:
-        # Allow extra fields to be flexible with input
-        extra = "allow"
-        json_schema_extra = {
-            "example": {
-                "age": 35,
-                "occupation": "admin.",
-                "marital_status": "married",
-                "education": "university.degree",
-                "has_credit": "no",
-                "housing_loan": "yes",
-                "personal_loan": "no",
-                "contact_mode": "cellular",
-                "month": "may",
-                "week_day": "thu",
-                "last_contact_duration": 261,
-                "contacts_per_campaign": 1,
-                "N_last_days": 999,
-                "nb_previous_contact": 0,
-                "previous_outcome": "nonexistent",
-                "emp_var_rate": 1.1,
-                "cons_price_index": 93.994,
-                "cons_conf_index": -36.4,
-                "euri_3_month": 4.857,
-                "nb_employees": 5191
-            }
-        }
+    # Customer demographics
+    age: int
+    occupation: str
+    marital_status: str
+    education: str
+    
+    # Financial info
+    has_credit: str
+    housing_loan: str
+    personal_loan: str
+    
+    # Contact details
+    contact_mode: str
+    month: str
+    week_day: str
+    last_contact_duration: int
+    contacts_per_campaign: int
+    N_last_days: int
+    nb_previous_contact: int
+    previous_outcome: str
+    
+    # Economic indicators
+    emp_var_rate: float
+    cons_price_index: float
+    cons_conf_index: float
+    euri_3_month: float
+    nb_employees: float
 
 @app.get("/")
 async def root():
