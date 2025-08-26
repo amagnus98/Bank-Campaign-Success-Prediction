@@ -1,6 +1,8 @@
 # 🏦 Bank Marketing Prediction Demo
 
-A clean, production-ready ML demo that predicts whether customers will subscribe to bank term deposits. Built with sklearn Random Forest, FastAPI backend, and Streamlit frontend.
+A clean, production-ready ML demo that predicts whether customers will subscribe to a service based on a campaign. Built with sklearn Random Forest, FastAPI backend, and Streamlit frontend.
+
+Main solution development is found in the notebooks folder in the case_solution.ipynb notebook. The rest of the code is primarily for the api and streamlit app.
 
 ## ✨ Features
 
@@ -31,15 +33,18 @@ Both services will be available at the same URLs but running in containers.
 
 ```
 ├── src/
-│   ├── model_server.py    # ML model wrapper with prediction logic
-│   ├── api.py            # FastAPI REST API with validation
-│   └── app.py            # Streamlit web interface
+│   ├── model_server.py       # ML model wrapper with prediction logic
+│   ├── api.py                # FastAPI REST API with validation
+│   └── app.py                # Streamlit web interface
 ├── models/
 │   └── best_rf_pipeline.pkl  # Trained Random Forest pipeline
 ├── data/
 │   ├── bank_data_raw.csv     # Original dataset
 │   └── sample_data.csv       # Sample for testing
-└── Makefile              # Simple automation commands
+│
+├── notebooks/
+│   └── case_solution.ipynb   # Solution development including data exploration, preprocessing, model training and evaluation.
+└── Makefile                  # Simple automation commands
 ```
 
 ## 🛠️ Commands
