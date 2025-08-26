@@ -1,0 +1,10 @@
+# Docker ignore file
+.git/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+notebooks/
+data/
+README.md
+Makefile

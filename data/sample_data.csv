@@ -1,0 +1,6 @@
+age,occupation,marital_status,education,has_credit,housing_loan,personal_loan,contact_mode,month,week_day,last_contact_duration,contacts_per_campaign,N_last_days,nb_previous_contact,previous_outcome,emp_var_rate,cons_price_index,cons_conf_index,euri_3_month,nb_employees
+35,admin.,married,university.degree,no,yes,no,cellular,may,thu,261,1,999,0,nonexistent,1.1,93.994,-36.4,4.857,5191
+42,management,single,high.school,no,no,yes,telephone,nov,fri,151,2,999,0,nonexistent,-0.1,93.200,-42.0,4.191,5099
+28,student,married,university.degree,yes,yes,no,cellular,jul,mon,198,1,999,0,nonexistent,1.4,94.465,-41.8,4.961,5228
+56,retired,married,basic.4y,no,no,no,telephone,may,tue,139,1,999,0,nonexistent,1.1,93.994,-36.4,4.857,5191
+33,technician,single,professional.course,no,yes,no,cellular,aug,wed,217,3,999,1,failure,-0.5,93.749,-34.6,4.120,5099

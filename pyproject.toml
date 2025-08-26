@@ -1,0 +1,20 @@
+[project]
+name = "bank-data-analysis"
+version = "0.1.0"
+description = "Production-ready ML API for predicting bank marketing campaign outcomes using XGBoost"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.116.1",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.5",
+    "numpy>=2.3.2",
+    "pandas>=2.3.2",
+    "plotly>=6.3.0",
+    "python-multipart>=0.0.20",
+    "scikit-learn>=1.7.1",
+    "seaborn>=0.13.2",
+    "streamlit>=1.48.1",
+    "uvicorn>=0.35.0",
+    "xgboost>=3.0.4",
+]
