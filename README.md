@@ -105,8 +105,24 @@ curl -X POST "http://localhost:8000/predict" \
     "occupation": "admin.",
     "month": "may",
     "education": "university.degree",
-    "marital_status": "single"
+    "marital_status": "single",
+    "has_credit": "yes",
+    "housing_loan": "no",
+    "personal_loan": "no",
+    "contact_mode": "cellular",
+    "week_day": "mon",
+    "last_contact_duration": "120",
+    "contacts_per_campaign": "2",
+    "N_last_days": "5",
+    "nb_previous_contact": "0",
+    "previous_outcome": "nonexistent",
+    "emp_var_rate": "1.2",
+    "cons_price_index": "93.2",
+    "cons_conf_index": "-36.4",
+    "euri_3_month": "4.5",
+    "nb_employees": "5228"
   }'
+
 
 # Download sample CSV
 curl -O http://localhost:8000/sample-csv/download
