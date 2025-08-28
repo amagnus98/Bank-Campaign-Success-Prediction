@@ -124,6 +124,12 @@ curl -X POST "http://localhost:8000/predict" \
   }'
 
 
+# Batch Prediction from csv file
+curl -X POST "http://localhost:8000/predict/batch" \
+  -F "file=@data/sample_data.csv"
+
+
+
 # Download sample CSV
 curl -O http://localhost:8000/sample-csv/download
 ```
